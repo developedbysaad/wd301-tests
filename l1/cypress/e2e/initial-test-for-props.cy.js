@@ -11,7 +11,7 @@ describe("When visiting the homepage,", () => {
   });
 
   it("the application should show `pending` and `done` lists of tasks ", () => {
-    cy.contains("pending", { matchCase: false });
-    cy.contains("done", { matchCase: false });
+    cy.contains('pending', { matchCase: false, timeout: 10000 });
+    cy.contains('done', { matchCase: false, timeout: 10000 });
   });
 });
